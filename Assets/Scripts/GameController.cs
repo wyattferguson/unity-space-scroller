@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
     public static GameController instance;
+
     public bool isDead = false;
 
     private float scoreRate = 0.5f;
@@ -14,6 +16,7 @@ public class GameController : MonoBehaviour {
 
     public Text scoreText;
     public Text endText;
+    public Text retryText;
 
     private void Awake() {
         if(instance == null) {
@@ -24,6 +27,7 @@ public class GameController : MonoBehaviour {
     public void PlayerCrash() {
         this.isDead = true;
         endText.gameObject.SetActive(true);
+        retryText.gameObject.SetActive(true);
     }
 
     private void Update() {
@@ -34,6 +38,11 @@ public class GameController : MonoBehaviour {
                 scoreText.text = "Score: " + this.score;
             }
             this.scoreBuffer += Time.deltaTime;
+        }
+
+        if (this.isDead && Input.GetButtonDown("Jump")) {
+            //...reload the current scene.
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

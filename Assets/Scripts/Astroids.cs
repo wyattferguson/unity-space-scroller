@@ -8,11 +8,11 @@ public class Astroids : MonoBehaviour {
 
     private GameObject[] astroids;
 
-    private int maxAstroids = 15;
-    private float spawnRate = 3f;
+    private int maxAstroids = 40;
+    private float spawnRate = 1f;
     private float spawnDelay = 0f;
-    private float minSpawnY = -3.65f;
-    private float maxSpawnY = 3.65f;
+    private float minSpawnY = -4f;
+    private float maxSpawnY = 4f;
     private float spawnX = 12.0f;
     private int recentAstroid = 0;
 

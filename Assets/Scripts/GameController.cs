@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour {
     public static GameController instance;
     public bool isDead = false;
 
-    private int spawnRate = 3;
     private float scoreRate = 0.5f;
     private float scoreBuffer = 0;
     private int score = 0;
@@ -35,7 +34,6 @@ public class GameController : MonoBehaviour {
                 scoreText.text = "Score: " + this.score;
             }
             this.scoreBuffer += Time.deltaTime;
-            Debug.Log(this.scoreBuffer + " " + this.score);
         }
     }
 

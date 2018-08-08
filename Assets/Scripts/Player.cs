@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
- 
+
     private float speed = 12f;
 
     private Vector2 screenTop;
@@ -58,10 +58,11 @@ public class Player : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D coll) {
-        Debug.Log(coll.gameObject.tag);
+        //Debug.Log(coll.gameObject.tag);
         if (coll.gameObject.tag == "Enemy") {
             GameController.instance.PlayerCrash();
-            this.gameObject.SetActive(false);
+            this.gameObject.GetComponent<Animator>().CrossFade("Explosion",0);
+            //this.gameObject.SetActive(false);
         }
     }
     

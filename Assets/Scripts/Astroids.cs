@@ -36,8 +36,11 @@ public class Astroids : MonoBehaviour {
             spawnDelay = 0;
             float spawnY = Random.Range(minSpawnY, maxSpawnY);
             float adjScale = Random.Range(scaleMin, scaleMax);
-            astroids[recentAstroid].transform.position = new Vector2(spawnX, spawnY);
-            astroids[recentAstroid].transform.localScale = new Vector3(adjScale, adjScale, 1);
+            float adjRotation = Random.Range(0,180);
+
+            astroids[recentAstroid].transform.position = new Vector2(spawnX, spawnY); // set spawn position
+            astroids[recentAstroid].transform.localScale = new Vector3(adjScale, adjScale, 1); // change astroid scale so they all look unique
+            astroids[recentAstroid].transform.Rotate(0, 0, adjRotation); // rotate astroid to give each one a distinct pattern
 
             recentAstroid++;
 

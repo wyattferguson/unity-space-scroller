@@ -18,5 +18,6 @@ A good starter Unity project, that has the player control a space ship while he 
 
 ### About
 Created by Wyatt Ferguson
+
 Twitter: https://twitter.com/wyattferguson
 

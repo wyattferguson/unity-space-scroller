@@ -9,11 +9,11 @@ A good starter Unity project, that has the player control a space ship while he 
 * Gameover screen and push to retry.
 
 
-![Intro Screenshot][https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/intro-screen.png]
+![Intro Screenshot](https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/intro-screen.png)
 
-![Game screenshot][https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/game-screen.png]
+![Game screenshot](https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/game-screen.png)
 
-![Gameover screenshot][https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/end-screen.png]
+![Gameover screenshot](https://raw.githubusercontent.com/wyattferguson/unity-space-scroller/master/Images/end-screen.png)
 
 
 ### About
